@@ -1,0 +1,80 @@
+# Ignore everything by default
+*
+
+# But include the files/directories we want to publish
+!README.md
+!LICENSE
+!pyproject.toml
+!src/
+!src/**
+!examples/
+!examples/**
+
+# Keep .gitignore itself
+!.gitignore
+
+# Python cache and build files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+data/
+validation/
+tests/
+test_data/
+
+env.bak/
+venv.bak/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Data files we don't want to publish
+data/
+test_data/
+validation/
+tests/
+*.pkl
+*.csv
+model_weights.pth
+uv.lock
+.python-version
+.justfile
+

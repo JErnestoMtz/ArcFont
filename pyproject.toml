@@ -1,0 +1,27 @@
+[project]
+name = "arcfont"
+version = "0.1.0"
+description = "Embedding model for generating Typography feature vectors"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.19.0",
+    "torch>=1.9.0",
+    "torchvision>=0.10.0",
+    "pillow>=8.0.0",
+    "pandas>=2.0.3",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "ipykernel>=6.0.0"
+]
+
+[tool.setuptools]
+packages = ["arcfont"]
+package-dir = {"" = "src"} 
