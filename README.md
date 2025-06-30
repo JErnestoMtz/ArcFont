@@ -11,6 +11,26 @@ The synthetic data generation pipeline and training methodology will be document
 Want to quickly test the model without setting up anything locally? You can try ArcFont through our interactive website and API at [https://caoslabs.com/arcfont](https://caoslabs.com/arcfont).
 This also helps support the development of the project.
 
+
+# Training Details
+
+The model was trained on synthetic text images through a two-stage process:
+
+1. Warmup Stage:
+   - Trained the backbone model with 64 hand selected fonts.
+   - Used a standard classification head to learn basic font features.
+   - Helped the model learn representative features for font identification.
+
+2. Embedding Stage:
+   - Expanded training to over 2000 diverse fonts.
+   - Implemented ArcMargin loss for better embedding quality
+   - Focused on creating distinct and separable font representations
+
+The complete training process used approximately 400,000 synthetic text images, generated with a custom data generation pipeline. All training was performed on a single NVIDIA H100 GPU.
+
+Training scripts and the synthetic data generation pipeline will be shared in future updates.
+
+
 # Installation
 
 ```bash
