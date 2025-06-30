@@ -1,6 +1,6 @@
 # ArcFont - Font Embedding Model
 
-Arcfont is an experimental model that generates 1024-dimensional embeddings from text images, focusing on encoding typographic and styling features. The model was developed and trained over a weekend as a proof of concept, so expect some rough edges.
+Arcfont is an experimental model that generates 1024-dimensional embeddings from images with text in them, focusing on encoding typographic and styling features. The model was developed and trained over a weekend as a proof of concept, so expect some rough edges.
 
 ArcFont draws inspiration from the [ArcFace](https://arxiv.org/abs/1801.07698) architecture commonly used in face recognition, adapting it for font recognition. Initial testing shows promising results compared to other alternatives, though more rigorous evaluation is needed.
 
@@ -182,7 +182,7 @@ Future updates will include:
 If you use this model in your research, please cite:
 
 ```bibtex
-@misc{arcfont2024,
+@misc{arcfont2025,
   author = {J. Ernesto Martínez},
   title = {ArcFont: A Deep Learning Model for Font Embeddings},
   year = {2025},
