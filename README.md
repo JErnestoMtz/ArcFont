@@ -6,11 +6,6 @@ ArcFont draws inspiration from the [ArcFace](https://arxiv.org/abs/1801.07698) a
 
 The synthetic data generation pipeline and training methodology will be documented in future updates.
 
-## Try it Online
-
-Want to quickly test the model without setting up anything locally? You can try ArcFont through our interactive website and API at [https://caoslabs.com/arcfont](https://caoslabs.com/arcfont).
-This also helps support the development of the project.
-
 
 # Training Details
 
